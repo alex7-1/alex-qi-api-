@@ -59,7 +59,7 @@ async def parse_screenshot(file: UploadFile = File(...)):
     # 调用 Claude API
     try:
         message = client.messages.create(
-            model="claude-opus-4-5",
+            model="claude-haiku-4-5-20251001",
             max_tokens=1000,
             messages=[{
                 "role": "user",
